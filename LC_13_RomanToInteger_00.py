@@ -13,10 +13,6 @@ def romanToInt(s: str) -> int:
     map['D'] = 500
     map['M'] = 1000
 
-    # handle case where input is single character
-    if len(s) == 1:
-        return map[s]
-
     # handle case where input is more than one character
     return_int = 0
     for index in range(len(s)):
